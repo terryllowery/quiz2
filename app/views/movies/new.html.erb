@@ -1,0 +1,11 @@
+<h1>Create A New Movie</h1>
+
+<%= simple_form_for @movie do |f| %>
+  <%= f.input :title %>
+  <br />
+  <%= f.input :description %>
+  <br />
+  <%= f.input :release_date, as: :date, html5: :true  %>
+  <br />
+  <%= f.submit %>
+<% end %>
